@@ -69,5 +69,21 @@ export const Timeline = styled.div`
 				margin-top: 10px;
 			}
 		}
+		div:nth-child(3){
+			h3{
+				margin-top:10px;
+				color: gray;
+			}
+		}
+		div:nth-child(4){
+			position: relative;
+			border-left: 1px solid #000;
+			p{
+				font-size: 1rem;
+				line-height: 20px;
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+		}
 	}
 `;

@@ -1,20 +1,20 @@
-import React from "react"
-import * as Style from "./style"
-import {FaAmericanSignLanguageInterpreting, FaCode, FaHeartO, FaSmileO } from 'react-icons/lib/fa';
-import myself from "../../../images/aboutme_cover.jpg"
-import {HR} from "../global/style"
-import Container from "../global/Container"
+import React from 'react';
+import * as Style from './style';
+import { FaAmericanSignLanguageInterpreting, FaCode, FaHeartO, FaSmileO } from 'react-icons/lib/fa';
+import myself from '../../../images/aboutme_cover.jpg';
+import { HR } from '../global/style';
+import Container from '../global/Container';
 
-const Aboutme = (props)=>{
+const Aboutme = (props) => {
 	return(
-		<Container
+		< Container
 			width="large"
 			FirstTitle="Hello"
-			SecondTitle={<React.Fragment>I am John Kuo! <br /> And this is me in Abisko. <FaSmileO /></React.Fragment>}
+			SecondTitle={<React.Fragment>I am Oleg Tsymbal! <br /> And this is me in Kyiv. <FaSmileO /></React.Fragment>}
 			history={props.history}
 		>
 			<Style.Banner>
-				<img src={myself} alt="Me at Sweden"/>
+				< img src={myself} alt="Me at Kyiv" />
 			</Style.Banner>
 			<Style.Intro>
 				<div>
@@ -22,24 +22,21 @@ const Aboutme = (props)=>{
 						<Style.Characteristic device={props.device}>
 							<div><FaAmericanSignLanguageInterpreting />I&#39;m a team player</div>
 							<div><FaCode />I got mad skills</div>
-							<div><FaHeartO />I am passionate</div>
+							<div><FaHeartO />I am passionate in my job</div>
 						</Style.Characteristic>
-						I am a graduate of the MIS department in National Chengchi University.<br />
-						I hold over 7 years of programming experience. <br />
-						Love to work on some side projects related to web development, blockchain applications, and 3D game development.
+						I hold over 10 years of programming and devops\ops experience. <br />
+						Love to work on some side projects related to web development, blockchain applications, 3D game development or Real Time Bidding platforms.
 						<HR />
-						I&#39;ve received my master degree in July, 2017. <br />
-						My research is based on blockchain, and I&#39;ve proposed a method to facilitate
-						the design of a blockchain-based ecosystem toward success and to make it self-sustaining. <br />
-						And I&#39;ve built a web-based farming game called <a target="_blank" rel="noopener" aria-label="blockfarm" name="blockfarm" href="https://github.com/johnhckuo/Block-Farm">Blockfarm</a> that allows users to trade with multiple users at the same time! <br />
-						What make this game so special are that:
+						I like bash and golang programming, and understand concepts of OOP. Also i interested in:
 						<ul>
-							<li>All the trading process and results will be recored on Ethereum blockchain.</li>
-							<li>Players can choose to play as a thief to steal other farmers&#39; crops, or to play as cop to guard the farmers.</li>
-							<li>Farmers can have a multi-party transaction with other players. It means that if A got what B wants, B got what C wants, and C got what A wants, then a transaction consists of A → B → C → A will be established.</li>
+							<li>Containerisation: Kubernetes, Docker(Swarm)</li>
+							<li>Microservices: 12factor app, REST(API), distributed database</li>
+							<li>Infrastructure as code: Ansible, Git, Terraform, Kubernetes yaml\helm </li>
+							<li>CI\CD: TravisCI, Jenkins, DroneCI, Kubernetes\Swarm deployment</li>
 						</ul>
+						I really love play football and I am fan Argentina's national team!
 						<br />
-						In the end, Blockfarm hits 300+ active users!
+						Thanks for reading!
 
 					</Style.Aboutme>
 				</div>

@@ -27,6 +27,14 @@ const Experience =(props)=>{
 										experience.description.map((content, index)=><p key={index}>● {content}</p>)
 									}
 								</div>
+								<div>
+								<h3> GOALS: </h3>
+								</div>
+								<div>
+									{
+										experience.goals.map((content, index)=><p key={index}>✔ {content}</p>)
+									}
+								</div>
 							</div>
 						);
 					})

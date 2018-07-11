@@ -1,71 +1,96 @@
 const Experiences = [
 	{
-		title:"VR Service Developer Intern",
-		company: "HTC Vive",
-		startDate: "2017.03",
-		endDate: " 2017.08",
+		title:"Devops Engineer",
+		company: "Admobitec",
+		startDate: "2017.10",
+		endDate: "2018.07",
 		description:[
-			"Develop the asset bundles of viveport VR ads including user interacting scripts and 3D object animator using Unity3D.",
-			"Responsible for the VR ads of Pirates of the Caribbean: Dead Men Tell No Tales and Dongfeng Citroen.",
-			"Integrate the opinions of marketing team, 3D artist, backend developer, making the VR ads project executed more smoothly."
+			"Implementing and developing solutions enabling Development and Operations teams to build, deploy, monitor and test applications and environments.",
+			"Evaluating and advising on virtualization and containerization solutions (Docker\\Vagrant\\Swarm)",
+			"Creating fully automated CI build and deployment infrastructure and processes for multiple company projects (DockerHub, TravisCI)",
+			"Developing Docker images to support Development and Testing Teams and their pipelines (DockerHub)",
+			"Monitoring and supporting company's infrastructure(EFK\\Prometheus\\Alertmanager\\Cadvisor)",
+			"Creating IAM Policy for AWS",
+			"Working closely with Architecture, Development, Test, Security and IT Services teams"
 		],
-		logo: "vive.jpg"	
-	},
-	{
-		title:"Blockchain Research Assistant",
-		company: "National Chengchi University",
-		startDate: "2016.09",
-		endDate: "2017.01",
-		description:[
-			"Building an insurance contract by utilizing Ethereum smart contract and oracle service.",
-			"Successfully create the connection between blockchain and real-time data provided by API from the Internet.",
-			"Using Solidity and Web3.js to build the prototype of insurance service."
+		goals:[
+			"Creating a Redis backup system (golang\\docker\\aws-s3\\slack-push)",
+			"Creating a Postgresql backup system (bash\\postgres-cli\\slack-push\\aws-s3)",
+			"Improving linters for unit tests (golang\\bash)",
+			"Creating a label based service discovery (traefik\\docker)",
+			"Creating a a automate deployment service based on a dockerhub webhook (golang\\docker-sdk)",
+			"Creating a distributed storage for  company's certificates (consul\\traefik)",
+			"Creating an infrastructure as service",
+			"Tuning bare metal company's servers for high load"
 		],
 		logo: "nccu.jpg"
 	},
 	{
-		title:"IT Consultant Intern",
-		company: "KPMG",
-		startDate: "2016.01",
-		endDate: "2016.03",
+		title:"Devops Engineer",
+		company: "OneBox Company",
+		startDate: "2015.09",
+		endDate: "2017.09",
 		description:[
-			"Conducting a market research and user experience research on the new App produced by KPMG, and propose some suggestions on features and modification of user experience.",
-			"Using Gliffy and POP to build a App prototype so that the developers can understand the idea behind this design.",
-			"Prototyping a new version of App and the average user satisfaction rises 33%."
+			"Database clusterization and replication (MariaDB)",
+			"Developing many scripts for the company(golang,bash)",
+			"Building Lua based VoIp routing",
+			"Integration software with API(Cloudflare, HvostingUA, TurboSMS, ClouDNS, SendPulse, AWS etc )",
+			"Monitoring and supporting company's infrastructure",
+			"Profiling and debuging applications for improve performance(PHP) XHProf & XHGui",
+			"Supporting virtual instances (KVM)",
+			"Building tests for CRM OneBox (Selenium\\Linters)"
+			
+		],
+		goals:[
+			"Building API for SaaS company services (golang)",
+			"Building a mail migration service (golang)",
+			"Building updater application for the CRM \"OneBox\" (shell) ",
+			"Building a basic CI for the company (GitLab CI)",
+			"Migrated a developer team from SVN to a GIT VCS",
+			"Dockerised the CRM Onebox",
+			"Create Infrastructure as Service for the company (Ansible\\Bash)",
+			"Increased  a company network efficiency by > %70",
+			"Increased company network services availability by > %50"
 		],
 		logo: "kpmg.jpg"
 	},
 	{
-		title:"Front-End Developer Intern",
-		company: "XYZ Printing",
-		startDate: "2015.09",
-		endDate: "2016.01",
-		description:[
-			"Responsible for the web development of China using Angular.js and Sass.",
-			"Propose new ideas about web page design with PM to improve user experience.",
-			"Adding/Updating new features of the websites using JavaScript/HTML and some modern packages, e.g. Bootstrap, jQuery."
-		],
-		logo: "xyz.jpg"
-	},
-	{
-		title:"Web Development Lecturer",
-		company: "NUKIM Web Developing Camp",
-		startDate: "2014.06",
+		title:"Application Integration Engineer",
+		company: "Starlink Group SA",
+		startDate: "2008.06",
 		endDate: "2014.07",
 		description:[
-			"Lecturing web development tutorials to senior high school students without any programming experience.",
-			"Every student is enthusiastic about programming and is able to create their own website after the class."
+			"Implementing and developing solutions enabling Development and Operations teams to build, deploy, monitor and test applications and environments.",
+			"Implementing monitoring and reporting solutions across a range of environments and platforms",
+			"Implementing LAMP\\LEMP stack",
+			"Supporting ORACLE RDBMS",
+			"Supporting Multiprotocol VoIP Transit Softswitch Professional (MVTS Pro)",
+			"Writing documentation and manual",
+			"Writing shell\\bash\\python script for company's infrastructute"
+		],
+		goals:[
+			"Increased the company's profitability by >= 400%",
+			"Increasing automatization in company by 50%",
+			"I builded low cost and easy to switch service API for a VoIP routing system",
+			"Realised a backup as service",
+			"Automated tests for voip routes"
 		],
 		logo: "nukim.jpg"
 	},
 	{
-		title:"Founder & Organizer",
-		company: "IMPioneer Voluntary Group",
-		startDate: "2013.07",
-		endDate: "2014.06",
+		title:"Software Development Engineer",
+		company: "Managing Company KSK",
+		startDate: "2003.07",
+		endDate: "2008.06",
 		description:[
-			"This voluntary group prepares computer science courses lectured at schools in remote and mountainous area.",
-			"Arrange the lecturer of each coourse(including me xD), and represent the group to coordinate with elementary schools."
+			"Software integration with a LDAP\\AD ",
+			"Supporting Mysql\\Mssql RDBMS",
+			"Monitoring, Configuration and Health Check  a company's services"
+		],
+		goals:[
+			"Reduction a company's software costs by 80%",
+			"Increased a automatization in a company by 15%",
+			"implemented of basic CI to a company's software product"
 		],
 		logo: "impioneer.jpg"
 	},
