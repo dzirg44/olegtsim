@@ -45,7 +45,7 @@ export default class Index extends React.Component{
         </Style.Intro>
         <Style.Links device={this.props.device}>
           <Link to="/aboutme"><Style.Link firstLink={true}>About Me</Style.Link></Link>
-          <Link to="/experience"><Style.Link>Experience</Style.Link></Link>
+          <Link to="/experience"><Style.Link>Resume</Style.Link></Link>
           <Link to="/portfolio"><Style.Link>Portfolio</Style.Link></Link>
           <Link to="/blog"><Style.Link lastLink={true}>Blog</Style.Link></Link>
         </Style.Links>

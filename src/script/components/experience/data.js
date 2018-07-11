@@ -1,3 +1,11 @@
+const Softskills = [
+	{
+		technologygroup:"Devops Engineer",
+		technology:"bash, golang",
+
+	},
+
+]
 const Experiences = [
 	{
 		title:"Devops Engineer",

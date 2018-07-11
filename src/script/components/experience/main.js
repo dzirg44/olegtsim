@@ -1,5 +1,6 @@
 import React from "react"
 import * as Style from "./style.js"
+//import { Experiences, Softskills } from "./data"
 import Experiences from "./data"
 import Container from "../global/Container"
 
@@ -8,9 +9,23 @@ const Experience =(props)=>{
 		<Container
 			width="large"
 			history={props.history}
-			FirstTitle="Experience"
+			FirstTitle="Curriculum vitae"
 			SecondTitle={<React.Fragment>Besides from my research, <br /> I&#39;ve applied interships in various industries in order to pursue my dream</React.Fragment>}
 		>
+			<Style.Softskills device={props.device}>
+		    {
+				Experiences.map((experience, index) => {
+					return (
+						<div key={index}>
+						<div>
+						<h1>{experience.title}</h1>
+						<h3> AAAAAAAAAAAA: </h3>
+						</div>
+						</div>
+					);
+			})
+			}
+		    </Style.Softskills>
 			<Style.Timeline device={props.device}>
 				{
 					Experiences.map((experience, index)=>{

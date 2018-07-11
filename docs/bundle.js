@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a855a8b545162eb6d0f3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "43d7e3755444f8510191"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -56879,8 +56879,6 @@
 
 	var _data = __webpack_require__(722);
 
-	var _data2 = _interopRequireDefault(_data);
-
 	var _Container = __webpack_require__(716);
 
 	var _Container2 = _interopRequireDefault(_Container);
@@ -56895,7 +56893,7 @@
 			{
 				width: "large",
 				history: props.history,
-				FirstTitle: "Experience",
+				FirstTitle: "Curriculum vitae",
 				SecondTitle: _react2.default.createElement(
 					_react2.default.Fragment,
 					null,
@@ -56905,9 +56903,33 @@
 				)
 			},
 			_react2.default.createElement(
+				Style.Softskills,
+				{ device: props.device },
+				_data.Softskills.map(function (experience, index) {
+					return _react2.default.createElement(
+						"div",
+						{ key: index },
+						_react2.default.createElement(
+							"div",
+							null,
+							_react2.default.createElement(
+								"h1",
+								null,
+								experience.title
+							),
+							_react2.default.createElement(
+								"h3",
+								null,
+								" AAAAAAAAAAAA: "
+							)
+						)
+					);
+				})
+			),
+			_react2.default.createElement(
 				Style.Timeline,
 				{ device: props.device },
-				_data2.default.map(function (experience, index) {
+				_data.Experiences.map(function (experience, index) {
 					return _react2.default.createElement(
 						"div",
 						{ key: index },
@@ -56990,9 +57012,10 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Timeline = undefined;
+	exports.Softskills = exports.Timeline = undefined;
 
-	var _templateObject = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 40px 0px;\n\twidth: 80%;\n\tmargin-left: 10%;\n\tmargin-bottom: 40px;\n\t&:before{\n\t\tdisplay: ", ";\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\ttop: 40px;\n\t\tleft: 65px;\n\t\twidth: 3px;\n\t\theight: calc(100% - 80px);\n\t\tbackground: #c0392b;\n\t}\n\n\t&>div{\n\t\tposition: relative;\n\t\tmargin-top: 40px;\n\t\tmargin-bottom: 40px;\n\t\tmargin-left: ", ";\n\t\tdiv:nth-child(1){\n\t\t\tposition: relative;\n\t\t\tletter-spacing: 1.5px;\n\t\t\th1{\n\t\t\t\tfont-size: 1.5rem;\n\t\t\t\tfont-weight: bolder;\n\t\t\t}\n\t\t\t\n\t\t\th2{\n\t\t\t\tdisplay: ", ";\n\t\t\t\tposition: absolute;\n\t\t\t\tfont-size: 1.3rem;\n\t\t\t\tcolor: rgba(0,0,0,0.5);\n\t\t\t\tfloat :left;\n\t\t\t\t&:before{\n\t\t\t\t\tcontent: \"\";\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tleft: -62px;\n\t\t\t\t\twidth: 10px;\n\t\t\t\t\theight: 10px;\n\t\t\t\t\tbackground: #fff;\n\t\t\t\t\tborder: 3px solid #c0392b;\n\t\t\t\t}\n\t\t\t\tdiv{\n\t\t\t\t\tfont-size: 1rem;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\tleft: -200%;\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(2){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(3){\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(4){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t}\n"], ["\n\tposition: relative;\n\tpadding: 40px 0px;\n\twidth: 80%;\n\tmargin-left: 10%;\n\tmargin-bottom: 40px;\n\t&:before{\n\t\tdisplay: ", ";\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\ttop: 40px;\n\t\tleft: 65px;\n\t\twidth: 3px;\n\t\theight: calc(100% - 80px);\n\t\tbackground: #c0392b;\n\t}\n\n\t&>div{\n\t\tposition: relative;\n\t\tmargin-top: 40px;\n\t\tmargin-bottom: 40px;\n\t\tmargin-left: ", ";\n\t\tdiv:nth-child(1){\n\t\t\tposition: relative;\n\t\t\tletter-spacing: 1.5px;\n\t\t\th1{\n\t\t\t\tfont-size: 1.5rem;\n\t\t\t\tfont-weight: bolder;\n\t\t\t}\n\t\t\t\n\t\t\th2{\n\t\t\t\tdisplay: ", ";\n\t\t\t\tposition: absolute;\n\t\t\t\tfont-size: 1.3rem;\n\t\t\t\tcolor: rgba(0,0,0,0.5);\n\t\t\t\tfloat :left;\n\t\t\t\t&:before{\n\t\t\t\t\tcontent: \"\";\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tleft: -62px;\n\t\t\t\t\twidth: 10px;\n\t\t\t\t\theight: 10px;\n\t\t\t\t\tbackground: #fff;\n\t\t\t\t\tborder: 3px solid #c0392b;\n\t\t\t\t}\n\t\t\t\tdiv{\n\t\t\t\t\tfont-size: 1rem;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\tleft: -200%;\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(2){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(3){\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(4){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t}\n"]);
+	var _templateObject = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 40px 0px;\n\twidth: 80%;\n\tmargin-left: 10%;\n\tmargin-bottom: 40px;\n\t&:before{\n\t\tdisplay: ", ";\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\ttop: 40px;\n\t\tleft: 65px;\n\t\twidth: 3px;\n\t\theight: calc(100% - 80px);\n\t\tbackground: #c0392b;\n\t}\n\n\t&>div{\n\t\tposition: relative;\n\t\tmargin-top: 40px;\n\t\tmargin-bottom: 40px;\n\t\tmargin-left: ", ";\n\t\tdiv:nth-child(1){\n\t\t\tposition: relative;\n\t\t\tletter-spacing: 1.5px;\n\t\t\th1{\n\t\t\t\tfont-size: 1.5rem;\n\t\t\t\tfont-weight: bolder;\n\t\t\t}\n\t\t\t\n\t\t\th2{\n\t\t\t\tdisplay: ", ";\n\t\t\t\tposition: absolute;\n\t\t\t\tfont-size: 1.3rem;\n\t\t\t\tcolor: rgba(0,0,0,0.5);\n\t\t\t\tfloat :left;\n\t\t\t\t&:before{\n\t\t\t\t\tcontent: \"\";\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tleft: -62px;\n\t\t\t\t\twidth: 10px;\n\t\t\t\t\theight: 10px;\n\t\t\t\t\tbackground: #fff;\n\t\t\t\t\tborder: 3px solid #c0392b;\n\t\t\t\t}\n\t\t\t\tdiv{\n\t\t\t\t\tfont-size: 1rem;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\tleft: -200%;\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(2){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(3){\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(4){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t}\n"], ["\n\tposition: relative;\n\tpadding: 40px 0px;\n\twidth: 80%;\n\tmargin-left: 10%;\n\tmargin-bottom: 40px;\n\t&:before{\n\t\tdisplay: ", ";\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\ttop: 40px;\n\t\tleft: 65px;\n\t\twidth: 3px;\n\t\theight: calc(100% - 80px);\n\t\tbackground: #c0392b;\n\t}\n\n\t&>div{\n\t\tposition: relative;\n\t\tmargin-top: 40px;\n\t\tmargin-bottom: 40px;\n\t\tmargin-left: ", ";\n\t\tdiv:nth-child(1){\n\t\t\tposition: relative;\n\t\t\tletter-spacing: 1.5px;\n\t\t\th1{\n\t\t\t\tfont-size: 1.5rem;\n\t\t\t\tfont-weight: bolder;\n\t\t\t}\n\t\t\t\n\t\t\th2{\n\t\t\t\tdisplay: ", ";\n\t\t\t\tposition: absolute;\n\t\t\t\tfont-size: 1.3rem;\n\t\t\t\tcolor: rgba(0,0,0,0.5);\n\t\t\t\tfloat :left;\n\t\t\t\t&:before{\n\t\t\t\t\tcontent: \"\";\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tleft: -62px;\n\t\t\t\t\twidth: 10px;\n\t\t\t\t\theight: 10px;\n\t\t\t\t\tbackground: #fff;\n\t\t\t\t\tborder: 3px solid #c0392b;\n\t\t\t\t}\n\t\t\t\tdiv{\n\t\t\t\t\tfont-size: 1rem;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\tleft: -200%;\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(2){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(3){\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(4){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t}\n"]),
+	    _templateObject2 = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 40px 0px;\n\twidth: 80%;\n\tmargin-left: 10%;\n\tmargin-bottom: 40px;\n\t&:before{\n\t\tdisplay: ", ";\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\ttop: 40px;\n\t\tleft: 65px;\n\t\twidth: 3px;\n\t\theight: calc(100% - 80px);\n\t\tbackground: #5394f5;\n\t}\n\n\t&>div{\n\t\tposition: relative;\n\t\tmargin-top: 40px;\n\t\tmargin-bottom: 40px;\n\t\tmargin-left: ", ";\n\t\tdiv:nth-child(1){\n\t\t\tposition: relative;\n\t\t\tletter-spacing: 1.5px;\n\t\t\th1{\n\t\t\t\tfont-size: 1.5rem;\n\t\t\t\tfont-weight: bolder;\n\t\t\t}\n\t\t\t\n\t\t\th2{\n\t\t\t\tdisplay: ", ";\n\t\t\t\tposition: absolute;\n\t\t\t\tfont-size: 1.3rem;\n\t\t\t\tcolor: rgba(0,0,0,0.5);\n\t\t\t\tfloat :left;\n\t\t\t\t&:before{\n\t\t\t\t\tcontent: \"\";\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tleft: -62px;\n\t\t\t\t\twidth: 10px;\n\t\t\t\t\theight: 10px;\n\t\t\t\t\tbackground: #fff;\n\t\t\t\t\tborder: 3px solid #5394f5;\n\t\t\t\t}\n\t\t\t\tdiv{\n\t\t\t\t\tfont-size: 1rem;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\tleft: -200%;\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(2){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(3){\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(4){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t}\n"], ["\n\tposition: relative;\n\tpadding: 40px 0px;\n\twidth: 80%;\n\tmargin-left: 10%;\n\tmargin-bottom: 40px;\n\t&:before{\n\t\tdisplay: ", ";\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\ttop: 40px;\n\t\tleft: 65px;\n\t\twidth: 3px;\n\t\theight: calc(100% - 80px);\n\t\tbackground: #5394f5;\n\t}\n\n\t&>div{\n\t\tposition: relative;\n\t\tmargin-top: 40px;\n\t\tmargin-bottom: 40px;\n\t\tmargin-left: ", ";\n\t\tdiv:nth-child(1){\n\t\t\tposition: relative;\n\t\t\tletter-spacing: 1.5px;\n\t\t\th1{\n\t\t\t\tfont-size: 1.5rem;\n\t\t\t\tfont-weight: bolder;\n\t\t\t}\n\t\t\t\n\t\t\th2{\n\t\t\t\tdisplay: ", ";\n\t\t\t\tposition: absolute;\n\t\t\t\tfont-size: 1.3rem;\n\t\t\t\tcolor: rgba(0,0,0,0.5);\n\t\t\t\tfloat :left;\n\t\t\t\t&:before{\n\t\t\t\t\tcontent: \"\";\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tleft: -62px;\n\t\t\t\t\twidth: 10px;\n\t\t\t\t\theight: 10px;\n\t\t\t\t\tbackground: #fff;\n\t\t\t\t\tborder: 3px solid #5394f5;\n\t\t\t\t}\n\t\t\t\tdiv{\n\t\t\t\t\tfont-size: 1rem;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\tleft: -200%;\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(2){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(3){\n\t\t\th3{\n\t\t\t\tmargin-top:10px;\n\t\t\t\tcolor: gray;\n\t\t\t}\n\t\t}\n\t\tdiv:nth-child(4){\n\t\t\tposition: relative;\n\t\t\tborder-left: 1px solid #000;\n\t\t\tp{\n\t\t\t\tfont-size: 1rem;\n\t\t\t\tline-height: 20px;\n\t\t\t\tmargin-left: 20px;\n\t\t\t\tmargin-top: 10px;\n\t\t\t}\n\t\t}\n\t}\n"]);
 
 	var _styledComponents = __webpack_require__(74);
 
@@ -57010,6 +57033,14 @@
 		return props.device === "mobile" ? "none" : "inherit";
 	});
 
+	var Softskills = exports.Softskills = _styledComponents2.default.div(_templateObject2, function (props) {
+		return props.device === "mobile" ? "none" : "inherit";
+	}, function (props) {
+		return props.device === "mobile" ? "0px" : "120px";
+	}, function (props) {
+		return props.device === "mobile" ? "none" : "inherit";
+	});
+
 /***/ }),
 /* 722 */
 /***/ (function(module, exports) {
@@ -57019,6 +57050,11 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
+	var Softskills = [{
+		technologygroup: "Devops Engineer",
+		technology: "bash, golang"
+
+	}];
 	var Experiences = [{
 		title: "Devops Engineer",
 		company: "Admobitec",
@@ -57053,7 +57089,7 @@
 		logo: "impioneer.jpg"
 	}];
 
-	exports.default = Experiences;
+	exports.default = { Experiences: Experiences, Softskills: Softskills };
 
 /***/ }),
 /* 723 */
@@ -63565,7 +63601,7 @@
 	            _react2.default.createElement(
 	              Style.Link,
 	              null,
-	              'Experience'
+	              'Resume'
 	            )
 	          ),
 	          _react2.default.createElement(
