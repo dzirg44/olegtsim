@@ -5,7 +5,7 @@ const Softskills = [
 
 	},
 
-]
+];
 const Experiences = [
 	{
 		title:"Devops Engineer",
@@ -102,6 +102,6 @@ const Experiences = [
 		],
 		logo: "impioneer.jpg"
 	},
-]
+];
 
 export default Experiences;

@@ -107,12 +107,12 @@ export const Softskills = styled.div`
 
 	&>div{
 		position: relative;
-		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		margin-left: ${props=>props.device === "mobile" ? "0px" : "120px"};
 		div:nth-child(1){
 			position: relative;
-			letter-spacing: 1.5px;
+			letter-spacing: 1.0px;
 			h1{
 				font-size: 1.5rem;
 				font-weight: bolder;
@@ -173,5 +173,28 @@ export const Softskills = styled.div`
 				margin-top: 10px;
 			}
 		}
+	}
+`;
+
+export const HR = styled.hr`
+	border: 0;
+	height: 1px;
+	opacity: .15;
+	margin: 1em 0;
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #222222, #f0f0f0);
+`;
+
+export const Delimiter = styled.div`
+	position: center;
+	text-align: center;
+	padding: 10px 0px;
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	h1{
+		font-size: 1.5rem;
+		font-weight: bolder;
+		position: center;
+		margin-top:10px;
 	}
 `;

@@ -42,6 +42,8 @@ export default class Container extends React.Component{
 					{
 						this.props.SecondTitle ? <h3>{this.props.SecondTitle}</h3> : null
 					}
+					<h3>{this.props.ThirdTitle}</h3>
+
 				</Title>
 				{this.props.children}
 			</ContainerStyle>
